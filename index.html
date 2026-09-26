@@ -1,4 +1,415 @@
 <!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pyjama by Michelle</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff5f8;
+    color: #492b38;
+}
+
+header {
+    background: #e85d91;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+header p {
+    margin: 8px 0 0;
+    font-size: 16px;
+}
+
+nav {
+    background: white;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+nav a {
+    color: #e85d91;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: #ffe1ec;
+}
+
+.hero h2 {
+    color: #d9437b;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background: #e85d91;
+    color: white;
+    padding: 13px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 40px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+section h2 {
+    text-align: center;
+    color: #d9437b;
+    margin-bottom: 30px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.product {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.product .image {
+    height: 180px;
+    background: #ffd6e5;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #d9437b;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.product h3 {
+    color: #d9437b;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e85d91;
+}
+
+.delivery {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.delivery-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+}
+
+.delivery-item {
+    background: #fff0f5;
+    padding: 12px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact p {
+    font-size: 18px;
+}
+
+.payment {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.payment div {
+    padding: 12px 20px;
+    background: #ffe1ec;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #d9437b;
+}
+
+footer {
+    background: #e85d91;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 26px;
+    }
+
+    .hero h2 {
+        font-size: 25px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🌸 Pyjama by Michelle 🌸</h1>
+    <p>Des pyjamas doux, élégants et confortables</p>
+</header>
+
+<nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#produits">Nos pyjamas</a>
+    <a href="#livraison">Livraison</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero" id="accueil">
+    <h2>Bienvenue chez Pyjama by Michelle 💕</h2>
+    <p>
+        Découvrez nos magnifiques pyjamas pour dormir confortablement
+        tout en restant élégante.
+    </p>
+
+    <a href="#produits" class="btn">
+        Découvrir nos pyjamas
+    </a>
+</section>
+
+<section id="produits">
+    <h2>🌸 Nos pyjamas 🌸</h2>
+
+    <div class="products">
+
+        <div class="product">
+            <div class="image">
+                Photo pyjama 1
+            </div>
+
+            <h3>Pyjama Satin Rose</h3>
+
+            <p>
+                Un pyjama doux et élégant pour vos nuits.
+            </p>
+
+            <div class="price">
+                10 000 FCFA
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="image">
+                Photo pyjama 2
+            </div>
+
+            <h3>Pyjama Satin Noir</h3>
+
+            <p>
+                Un modèle chic et confortable.
+            </p>
+
+            <div class="price">
+                10 000 FCFA
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="image">
+                Photo pyjama 3
+            </div>
+
+            <h3>Pyjama Fleuri</h3>
+
+            <p>
+                Un modèle féminin et agréable à porter.
+            </p>
+
+            <div class="price">
+                10 000 FCFA
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="livraison">
+    <h2>🚚 Prix de livraison par commune</h2>
+
+    <div class="delivery">
+
+        <div class="delivery-list">
+
+            <div class="delivery-item">
+                <span>Cocody</span>
+                <span>1 500 F</span>
+            </div>
+
+            <div class="delivery-item">
+                <span>Adjamé</span>
+                <span>1 500 F</span>
+            </div>
+
+            <div class="delivery-item">
+                <span>Attecoube</span>
+                <span>1 500 F</span>
+            </div>
+
+            <div class="delivery-item">
+                <span>Koumassi</span>
+                <span>1 500 F</span>
+            </div>
+
+            <div class="delivery-item">
+                <span>Marcory</span>
+                <span>1 500 F</span>
+            </div>
+
+            <div class="delivery-item">
+                <span>Port-Bouët</span>
+                <span>1 500 F</span>
+            </div>
+
+            <div class="delivery-item">
+                <span>Gonzaque</span>
+                <span>2 000 F</span>
+            </div>
+
+            <div class="delivery-item">
+                <span>Bassam</span>
+                <span>2 500 F</span>
+            </div>
+
+            <div class="delivery-item">
+                <span>Anyama</span>
+                <span>2 000 F</span>
+            </div>
+
+            <div class="delivery-item">
+                <span>Abobo</span>
+                <span>1 500 F</span>
+            </div>
+
+            <div class="delivery-item">
+                <span>Treichville</span>
+                <span>1 500 F</span>
+            </div>
+
+            <div class="delivery-item">
+                <span>Plateau</span>
+                <span>1 500 F</span>
+            </div>
+
+            <div class="delivery-item">
+                <span>Yopougon</span>
+                <span>1 500 F</span>
+            </div>
+
+            <div class="delivery-item">
+                <span>N'dotré</span>
+                <span>2 000 F</span>
+            </div>
+
+            <div class="delivery-item">
+                <span>Songon</span>
+                <span>2 000 F</span>
+            </div>
+
+            <div class="delivery-item">
+                <span>Bingerville</span>
+                <span>2 000 F</span>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section id="contact">
+    <h2>📞 Nous contacter</h2>
+
+    <div class="contact">
+
+        <p>
+            Pour commander votre pyjama, contactez-nous.
+        </p>
+
+        <p>
+            📱 <strong>WhatsApp : Votre numéro</strong>
+        </p>
+
+        <div class="payment">
+
+            <div>
+                🟠 Orange Money
+            </div>
+
+            <div>
+                🔵 Wave
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>
+        © 2026 Pyjama by Michelle 💕
+    </p>
+
+    <p>
+        Tous droits réservés.
+    </p>
+</footer>
+
+</body>
+</html><!DOCTYPE html>
 
 <html lang="fr">
 
